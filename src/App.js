@@ -1,25 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createGlobalStyle } from 'styled-components';
+import Template from './components/Template';
+import HeadBlock from './components/Head';
+import ItemList from './components/ItemList';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: #e9ecef;
+    text-align: center;
+  }
+
+  .a {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    line-height: 70px;
+    margin: 8px;
+    padding: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: #42a5f5;
+    border: none;
+    border-radius: 7.7px;
+    font-family: 'Gothic A1', sans-serif;
+
+    transition: color 0.5s;
+    :hover {
+      color: black; 
+    }
+  }
+
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Template>
+        <HeadBlock />
+        <ItemList />
+      </Template>
+    </>
   );
 }
 
