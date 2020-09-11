@@ -22,7 +22,11 @@ const Template = ({ children }) => {
         <div>
             <TemplateBloak>
                 <Link to="/" className="a">제품목록</Link>
+<<<<<<< HEAD
                 <Link to='장바구니인줄알았지~~님.낚임ㅅㄱ' className="a">장바구니</Link>
+=======
+                <Link to='www.google.com' className="a">장바구니</Link>
+>>>>>>> develop
                 {children}
             </TemplateBloak>
         </div>
