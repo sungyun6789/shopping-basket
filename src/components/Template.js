@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const TemplateBloak = styled.div`
@@ -17,12 +17,34 @@ const TemplateBloak = styled.div`
     margin-bottom: 32px;
 `;
 
+const listStyle = styled.div`
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    line-height: 70px;
+    margin: 8px;
+    padding: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: #42a5f5;
+    border: none;
+    border-radius: 7.7px;
+    font-family: 'Gothic A1', sans-serif;
+
+    transition: color 0.5s;
+    :hover {
+      color: black; 
+    }
+`;
+
 const Template = ({ children }) => {
+
     return (
         <div>
             <TemplateBloak>
-                <Link to="/" className="a">제품목록</Link>
-                <Link to='장바구니인줄알았지~~님.낚임ㅅㄱ' className="a">장바구니</Link>
+                <Link to='/' style='listStyle'>제품목록</Link>
+                <Link to="/basket">장바구니</Link>
                 {children}
             </TemplateBloak>
         </div>

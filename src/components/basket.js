@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Basket = styled.div`
+const BasketStyle = styled.div`
     width: 1000px;
     height: 1500px;
 
@@ -17,18 +17,14 @@ const Basket = styled.div`
     margin-bottom: 32px;
 `;
 
-const a = () => {
-    rerurn(
+const Basket = () => {
+    return (
         <div>
-            <Basket>
-                <Router>
-                    <Link to="/" className="a">제품목록</Link>
-                    <Link to="www.naver.com" className="a">장바구니</Link>
-                    {children}
-                </Router>
-            </Basket>
+            <BasketStyle>
+                나랑께
+            </BasketStyle>
         </div>
     )
 }
 
-export default a;
+export default Basket;
