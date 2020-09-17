@@ -15,7 +15,7 @@ function ItemList() {
     const Add = () => {
         setNumber(number + 1);
 
-        console.log(number);
+        console.log(number + '마리');
     }
     return (
         <div className="Item">

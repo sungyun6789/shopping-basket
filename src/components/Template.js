@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import './Template.scss';
 
 const TemplateBloak = styled.div`
     width: 1000px;
@@ -17,37 +18,32 @@ const TemplateBloak = styled.div`
     margin-bottom: 32px;
 `;
 
-const listStyle = styled.div`
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    line-height: 70px;
-    margin: 8px;
-    padding: 4px;
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
-    background-color: #42a5f5;
-    border: none;
-    border-radius: 7.7px;
-    font-family: 'Gothic A1', sans-serif;
-
-    transition: color 0.5s;
-    :hover {
-      color: black; 
-    }
-`;
+const onClick = (e) => {
+    console.clear();
+    alert('결제가 완료되었습니다.');
+}
 
 const Template = ({ children }) => {
 
     return (
         <div>
             <TemplateBloak>
-                <Link to='/' style='listStyle'>제품목록</Link>
-                <Link to="/basket">장바구니</Link>
+                <div className="templatestyle">
+                    <NavLink exact to="/"
+                        style={{ textDecoration: 'none', color: 'black' }}>
+                        제품목록
+                    </NavLink>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <NavLink exact to="/Basket" style={{ textDecoration: 'none', color: 'black' }}>장바구니</NavLink>
+                    <button onClick={onClick} className="buttonstyle">결제</button>
+                </div>
                 {children}
             </TemplateBloak>
-        </div>
+        </div >
     )
 };
+
 export default Template;

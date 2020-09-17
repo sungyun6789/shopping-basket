@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const BasketStyle = styled.div`
@@ -21,7 +20,7 @@ const Basket = () => {
     return (
         <div>
             <BasketStyle>
-                나랑께
+                어이어이 장바구니가 비었다.
             </BasketStyle>
         </div>
     )

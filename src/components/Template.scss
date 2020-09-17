@@ -1,0 +1,24 @@
+.templatestyle {
+    text-align: center;
+    line-height: 70px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Gothic A1', sans-serif;
+};
+
+.templatestyle:hover {
+    transition: color 0.5s;
+    color: red; 
+}
+
+.buttonstyle {
+    font-size: 15px;
+    padding: 2px;
+    height:30px;
+    width:100px;
+    margin-bottom: 15px;
+    margin-left: 130px;
+    color: #00e676;
+    background: white;
+    border: 1px solid #00e676;
+}
