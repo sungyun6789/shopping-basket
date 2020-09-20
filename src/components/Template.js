@@ -21,6 +21,7 @@ const TemplateBloak = styled.div`
 const onClick = (e) => {
     console.clear();
     alert('결제가 완료되었습니다.');
+    alert('장바구니가 비어있습니다.');
 }
 
 const Template = ({ children }) => {

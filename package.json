@@ -1,5 +1,4 @@
 {
-  "homepage": "https://sungyun6789.github.io/shopping-basket/",
   "name": "shopping-basket",
   "version": "0.1.0",
   "private": true,
@@ -36,5 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://sungyun6789.github.io/shopping-basket/"
 }
