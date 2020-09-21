@@ -15,8 +15,8 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
+      <Head />
       <Template>
-        <Head />
         <ItemList />
       </Template>
     </>

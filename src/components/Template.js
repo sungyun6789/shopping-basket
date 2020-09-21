@@ -15,12 +15,12 @@ const TemplateBloak = styled.div`
 
     margin: 0 auto;     /* 페이지 중앙에 나타나도록 설정 */
   
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 32px;
 
     text-align: center;
     font-size: 16px;
-    border: none;
+    border: 2px solid #00e676;
     font-family: 'Gothic A1', sans-serif;
 `;
 
@@ -28,10 +28,10 @@ const Template = () => {
     return (
         <div>
             <TemplateBloak>
-                <Route exact path="/" component={ItemList} style={{ textDecoration: 'none', color: 'black' }} />
-                <Route path="/basket" component={Basket} style={{ textDecoration: 'none', color: 'black' }} />
+                <Route exact path="/" component={ItemList} />
+                <Route path="/basket" component={Basket} />
             </TemplateBloak>
-        </div >
+        </div>
     )
 };
 

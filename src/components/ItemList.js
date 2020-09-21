@@ -93,12 +93,14 @@ button:hover {
 
 function ItemList() {
     const [number, setNumber] = useState(1);
+    const [img, setImg] = useState(['']);
 
     const Add = () => {
         setNumber(number + 1);
 
         console.log(number + '마리');
     }
+
     return (
         <ListBlock>
             <div className="Item">
