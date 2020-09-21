@@ -1,11 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import Basket from './Basket';
 import styled from 'styled-components';
-import './Template.scss';
+import ItemList from './ItemList';
 
 const TemplateBloak = styled.div`
     width: 1000px;
-    height: 1500px;
+    height: 1000px;
 
     position: relative;
     background: white;
@@ -16,32 +17,19 @@ const TemplateBloak = styled.div`
   
     margin-top: 50px;
     margin-bottom: 32px;
+
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    font-family: 'Gothic A1', sans-serif;
 `;
 
-const onClick = (e) => {
-    console.clear();
-    alert('결제가 완료되었습니다.');
-    alert('장바구니가 비어있습니다.');
-}
-
-const Template = ({ children }) => {
-
+const Template = () => {
     return (
         <div>
             <TemplateBloak>
-                <div className="templatestyle">
-                    <NavLink exact to="/"
-                        style={{ textDecoration: 'none', color: 'black' }}>
-                        제품목록
-                    </NavLink>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                    <NavLink exact to="/Basket" style={{ textDecoration: 'none', color: 'black' }}>장바구니</NavLink>
-                    <button onClick={onClick} className="buttonstyle">결제</button>
-                </div>
-                {children}
+                <Route exact path="/" component={ItemList} style={{ textDecoration: 'none', color: 'black' }} />
+                <Route path="/basket" component={Basket} style={{ textDecoration: 'none', color: 'black' }} />
             </TemplateBloak>
         </div >
     )
