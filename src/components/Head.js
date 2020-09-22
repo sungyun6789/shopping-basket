@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import Add from './ItemList';
 
 const HeadBlock = styled.div`
     padding-top: 30px;
@@ -20,7 +21,7 @@ const HeadBlock = styled.div`
     border-radius: 16px;
 
     padding-bottom: 30px;
-    margin-left: 320px;
+    margin: 0 auto;
     width: 940px;
     height: 100px;
 
@@ -32,6 +33,10 @@ const HeadBlock = styled.div`
         }
     }
 `;
+
+const func = ({ Add }) => {
+    console.log(Add + '마리');
+}
 
 const Head = () => {
     return (

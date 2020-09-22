@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const BasketStyle = styled.div`
@@ -29,7 +29,6 @@ const onClick = () => {
 }
 
 const Basket = () => {
-    const [basket, setBasket] = useState(['']);
 
     return (
         <BasketStyle>
