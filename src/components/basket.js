@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Buy from './ItemList';
 
 const BasketStyle = styled.div`
     text-align: center;
@@ -24,18 +25,18 @@ const BasketStyle = styled.div`
     }
 `;
 
-const onClick = () => {
+const BuyButton = () => {
     alert('구매가 완료되었습니다.');
 }
 
 const Basket = () => {
-
+    const number = 1;
     return (
         <BasketStyle>
             <div>
-                어이어이 장바구니가 비었다.
+                장바구니에 담겨진 개수: {number}
             </div>
-            <button onClick={onClick}>구 매</button>
+            <button onClick={BuyButton}>구 매</button>
         </BasketStyle>
     )
 }
