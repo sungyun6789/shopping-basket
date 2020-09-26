@@ -30,7 +30,7 @@ const BuyButton = () => {
 }
 
 const Basket = () => {
-    const number = 1;
+    const number = 0;
     return (
         <BasketStyle>
             <div>
