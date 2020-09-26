@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Add from './ItemList';
 
 const HeadBlock = styled.div`
     padding-top: 30px;
@@ -34,15 +33,11 @@ const HeadBlock = styled.div`
     }
 `;
 
-const func = ({ Add }) => {
-    console.log(Add + '마리');
-}
-
 const Head = () => {
     return (
         <>
             <HeadBlock>
-                <b><p>사지말고 입양하세요 공익광고는 아니고 공익인 성윤</p></b>
+                <b><p>사지말고 입양하세요</p></b>
                 <Link to="/" style={{ marginRight: '30px', textDecoration: 'none' }} className="link">제품목록</Link>
                 <Link to="/basket" style={{ textDecoration: 'none' }} className="link">장바구니</Link>
             </HeadBlock >
