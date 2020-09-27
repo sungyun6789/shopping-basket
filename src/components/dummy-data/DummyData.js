@@ -9,7 +9,7 @@ import cat7 from './img/cat7.jpg';
 
 
 const DummyData = () => {
-    const [count, setCount] = useState(1);
+    const [cartcount, setCartCount] = useState(1);
 
     return (
         <div className="Item">
@@ -19,7 +19,7 @@ const DummyData = () => {
                         <img src={cat1} alt="cat" />
                         <p className="name"><b>우주최강고양이 우최고</b></p>
                         <p className="age">4살입니다</p>
-                        <button onClick={() => setCount(count => count + 1)}>장바구니에 넣기</button>
+                        <button onClick={() => setCartCount(cartcount => cartcount + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
 
@@ -28,7 +28,7 @@ const DummyData = () => {
                         <img src={cat5} alt="cat" />
                         <p className="name"><b>현피킹 김고양</b></p>
                         <p className="age">6살입니다.</p>
-                        <button onClick={() => setCount(count => count + 1)}>장바구니에 넣기</button>
+                        <button onClick={() => setCartCount(cartcount => cartcount + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@ const DummyData = () => {
                         <img src={cat4} alt="cat" />
                         <p className="name"><b>고양이 어디십니까</b></p>
                         <p className="age">7살입니다.</p>
-                        <button onClick={() => setCount(count => count + 1)}>장바구니에 넣기</button>
+                        <button onClick={() => setCartCount(cartcount => cartcount + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ const DummyData = () => {
                         <img src={cat6} alt="cat" />
                         <p className="name"><b>장화신은 고양이</b></p>
                         <p className="age">127살입니다.</p>
-                        <button onClick={() => setCount(count => count + 1)}>장바구니에 넣기</button>
+                        <button onClick={() => setCartCount(cartcount => cartcount + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
 
@@ -55,7 +55,7 @@ const DummyData = () => {
                         <img src={cat3} alt="cat" />
                         <p className="name"><b>고양이 그립다</b></p>
                         <p className="age">99살입니다.</p>
-                        <button onClick={() => setCount(count => count + 1)}>장바구니에 넣기</button>
+                        <button onClick={() => setCartCount(cartcount => cartcount + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ const DummyData = () => {
                         <img src={cat1} alt="cat" />
                         <p className="name"><b>경기도 고양시</b></p>
                         <p className="age">8살입니다.</p>
-                        <button onClick={() => setCount(count => count + 1)}>장바구니에 넣기</button>
+                        <button onClick={() => setCartCount(cartcount => cartcount + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@ const DummyData = () => {
                         <img src={cat2} alt="cat" />
                         <p className="name"><b>실례지만 어데 고씹니까?</b></p>
                         <p className="age">12살입니다.</p>
-                        <button onClick={() => setCount(count => count + 1)}>장바구니에 넣기</button>
+                        <button onClick={() => setCartCount(cartcount => cartcount + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
 
@@ -82,7 +82,7 @@ const DummyData = () => {
                         <img src={cat1} alt="cat" />
                         <p className="name"><b>고용히해</b></p>
                         <p className="age">-9살입니다.</p>
-                        <button onClick={() => setCount(count => count + 1)}>장바구니에 넣기</button>
+                        <button onClick={() => setCartCount(cartcount => cartcount + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
 
@@ -91,11 +91,11 @@ const DummyData = () => {
                         <img src={cat7} alt="cat" />
                         <p className="name"><b>고양이는 울때 고양고양</b></p>
                         <p className="age">1살입니다.</p>
-                        <button onClick={() => setCount(count => count + 1)}>장바구니에 넣기</button>
+                        <button onClick={() => setCartCount(cartcount => cartcount + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
