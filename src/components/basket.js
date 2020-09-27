@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Buy from './ItemList';
+import Buy from './BasketNumber';
 
 const BasketStyle = styled.div`
     text-align: center;
@@ -30,12 +30,9 @@ const BuyButton = () => {
 }
 
 const Basket = () => {
-    const number = 0;
     return (
         <BasketStyle>
-            <div>
-                장바구니에 담겨진 개수: {number}
-            </div>
+            <Buy />
             <button onClick={BuyButton}>구 매</button>
         </BasketStyle>
     )
