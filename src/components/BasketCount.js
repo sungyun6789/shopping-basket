@@ -1,5 +1,11 @@
-import React from 'react';
-import cartcount from './dummy-data/DummyData';
+import React, { useState } from 'react';
+
+export const CartButton = () => {
+    const [cartcount, setCartCount] = useState(0);
+
+    setCartCount(cartcount + 1);
+
+}
 
 const CartCountDisplay = () => {
     return (
