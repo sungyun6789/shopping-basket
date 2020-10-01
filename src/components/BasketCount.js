@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
 
-export const CartButton = () => {
+export const CountContext = React.createContext();
+
+const ContextProvider = () => {
     const [cartcount, setCartCount] = useState(0);
-
     setCartCount(cartcount + 1);
-
+    return (
+        <CountContext.Provider value={{ cartcount, setCartCount }} />
+    )
 }
 
-const CartCountDisplay = () => {
-    return (
-        <div>
-            현재 장바구니에 담긴 수: {cartcount}
-        </div>
-    )
-};
-
-export default CartCountDisplay;
+export default ContextProvider;

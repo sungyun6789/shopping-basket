@@ -36,5 +36,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://sungyun6789.github.io/shopping-basket/"
+  "homepage": "https://sungyun6789.github.io/shopping-basket/",
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.1.2"
+  }
 }

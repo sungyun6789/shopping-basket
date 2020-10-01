@@ -1,6 +1,6 @@
 import React from 'react';
 import BasketStyle from '../style/BasketStyle';
-import CartCountDisplay from './BasketCount';
+import CartCountDisplay from './CountView';
 
 const BuyButton = () => {
     alert('구매가 완료되었습니다.');
