@@ -1,15 +1,8 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
-import Template from './components/Template';
+import GlobalStyle from './style/AppStyle';
 import Head from './components/Head';
+import Template from './components/Template';
 import ItemList from './components/ItemList';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background: #e9ecef;
-    text-align: center;
-  }
-`;
 
 const App = () => {
   return (
