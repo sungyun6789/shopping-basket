@@ -1,12 +1,11 @@
-import React from 'react';
-import ContextProvider from './BasketCount';
-import cartcount from './CountContext';
+import React, { useContext } from 'react';
+import { CartCount } from './BasketCount';
 
 const CartCountDisplay = () => {
+    const { count, setCount } = useContext(CartCount);
     return (
         <div>
-            현재 장바구니에 담긴 수:
-            <ContextProvider.Consumer value={cartcount} />
+            현재 장바구니에 담긴 수: {count}
         </div>
     )
 };

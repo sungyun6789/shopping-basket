@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import ContextProvider from '../BasketCount';
+import React, { useContext } from 'react';
+import { CartCount } from '../BasketCount';
 import cat1 from './img/cat1.jpg';
 import cat2 from './img/cat2.jpg';
 import cat3 from './img/cat3.jpg';
@@ -10,7 +10,8 @@ import cat7 from './img/cat7.jpg';
 
 
 const DummyData = () => {
-    const [count, setCount] = useState(0);
+    const { count, setCount } = useContext(CartCount);
+
     return (
         <div className="Item">
             <div className="head">
@@ -19,7 +20,7 @@ const DummyData = () => {
                         <img src={cat1} alt="cat" />
                         <p className="name"><b>우주최강고양이 우최고</b></p>
                         <p className="age">4살입니다</p>
-                        <button onClick={ContextProvider}>장바구니에 넣기</button>
+                        <button onClick={() => setCount(count + 1)}>장바구니에 넣기</button>
                     </div>
                 </div>
 
