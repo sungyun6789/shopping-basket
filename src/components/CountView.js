@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
-import { CartCount } from './BasketCount';
+import { CartContext } from './BasketCount';
 
-const CartCountDisplay = () => {
-    const { count, setCount } = useContext(CartCount);
+export default function CartCountDisplay() {
+    const count = useContext(CartContext);
     return (
         <div>
-            현재 장바구니에 담긴 수: {count}
+            {`고양이 ${count}마리`}
         </div>
-    )
+    );
 };
 
-export default CartCountDisplay;

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { CartCount } from '../BasketCount';
+import CartCount, { CartContext } from '../BasketCount';
 import cat1 from './img/cat1.jpg';
 import cat2 from './img/cat2.jpg';
 import cat3 from './img/cat3.jpg';
@@ -10,7 +10,7 @@ import cat7 from './img/cat7.jpg';
 
 
 const DummyData = () => {
-    const { count, setCount } = useContext(CartCount);
+    const { count, setCount } = useContext(CartContext);
 
     return (
         <div className="Item">
@@ -18,9 +18,9 @@ const DummyData = () => {
                 <div className="item-container">
                     <div className="body">
                         <img src={cat1} alt="cat" />
-                        <p className="name"><b>우주최강고양이 우최고</b></p>
-                        <p className="age">4살입니다</p>
-                        <button onClick={() => setCount(count + 1)}>장바구니에 넣기</button>
+                        <p className="name"><b>고양이</b></p>
+                        <p className="age">4살</p>
+                        <button onClick={CartCount}>장바구니에 넣기</button>
                     </div>
                 </div>
 
