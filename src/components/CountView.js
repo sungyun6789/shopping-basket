@@ -1,23 +1,18 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { useState, createContext } from 'react';
 
-const CartContext = createContext(0);
+const CountContext = createContext();
 
-export const CartCount = () => {
+const Increase = () => {
+    console.log('고양이');
     const [count, setCount] = useState(0);
-    setCount(count + 1);
+    const CartCount = () => count + 1;
     return (
         <div>
-            <CartContext.Provider value={count} />
+            <CountContext.Provider value={{ count, setCount }}>
+                고양이: {count}마리
+            </CountContext.Provider>
         </div>
-    );
-};
+    )
+}
 
-export default function CartCountDisplay() {
-    const count = useContext(CartContext);
-    return (
-        <div>
-            {`고양이 ${count}마리`}
-        </div>
-    );
-};
-
+export default Increase;
