@@ -6,13 +6,11 @@ const BuyButton = () => {
     alert('구매가 완료되었습니다.');
 }
 
-const Basket = () => {
+export default function Basket() {
     return (
         <BasketStyle>
             <CartCountDisplay />
             <button onClick={BuyButton}>구 매</button>
         </BasketStyle>
-    )
-}
-
-export default Basket;
+    );
+};

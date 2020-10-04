@@ -3,7 +3,7 @@ import '../App.js';
 import ListBlock from '../style/ItemListStyle';
 import DummyData from './dummy-data/DummyData';
 
-const ItemList = () => {
+export default function ItemList() {
     return (
         <>
             <ListBlock>
@@ -13,4 +13,3 @@ const ItemList = () => {
     );
 };
 
-export default ItemList;
