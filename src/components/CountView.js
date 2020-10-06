@@ -3,7 +3,7 @@ import React, { useState, createContext } from 'react';
 const CountContext = createContext();
 
 const Increase = () => {
-    console.log('고양이');
+    console.log('고양이' + count);
     const [count, setCount] = useState(0);
     const CartCount = () => count + 1;
     return (
