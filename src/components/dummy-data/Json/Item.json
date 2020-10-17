@@ -1,0 +1,47 @@
+[
+    {
+        "name": "이고양",
+        "imageUrl": "./img/cat1.jpg",
+        "age": 4
+    },
+    {
+        "name": "박고양",
+        "imageUrl": "./img/cat2.jpg",
+        "age": 6
+    },
+    {
+        "name": "김고양",
+        "imageUrl": "./img/cat3.jpg",
+        "age": 7
+    },
+    {
+        "name": "장화신은 고양이",
+        "imageUrl": "./img/cat4.jpg",
+        "age": 127
+    },
+    {
+        "name": "고양이 그립다",
+        "imageUrl": "./img/cat5.jpg",
+        "age": 99
+    },
+    {
+        "name": "고양시",
+        "imageUrl": "./img/cat5.jpg",
+        "age": 8
+    },
+    {
+        "name": "고양이",
+        "imageUrl": "./img/cat5.jpg",
+        "age": 12
+    },
+    {
+        "name": "고양히해",
+        "imageUrl": "./img/cat5.jpg",
+        "age": -9
+    },
+    {
+        "name": "고양이는 울때 고양고양",
+        "imageUrl": "./img/cat5.jpg",
+        "age": 1
+    }
+]

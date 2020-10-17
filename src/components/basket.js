@@ -1,6 +1,6 @@
 import React from 'react';
 import BasketStyle from '../style/BasketStyle';
-import CartCountDisplay from './CountView';
+import Increase from './CountView';
 
 const BuyButton = () => {
     alert('구매가 완료되었습니다.');
@@ -9,7 +9,7 @@ const BuyButton = () => {
 export default function Basket() {
     return (
         <BasketStyle>
-            <CartCountDisplay />
+            <Increase />
             <button onClick={BuyButton}>구 매</button>
         </BasketStyle>
     );
